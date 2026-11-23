@@ -1,0 +1,27 @@
+{
+  "name": "securevault",
+  "version": "1.0.0",
+  "description": "SecureVault - Web-Based File Encryption and Secure Storage System",
+  "type": "module",
+  "scripts": {
+    "install:server": "cd server && npm install",
+    "install:client": "cd client && npm install",
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "test": "node tests/crypto.test.js && node tests/config.test.js && node tests/integration.test.js",
+    "test:crypto": "node tests/crypto.test.js",
+    "test:config": "node tests/config.test.js",
+    "test:integration": "node tests/integration.test.js",
+    "build": "cd client && npm run build"
+  },
+  "keywords": [
+    "encryption",
+    "aes-256-gcm",
+    "web-crypto",
+    "security",
+    "file-vault"
+  ],
+  "author": "",
+  "license": "MIT"
+}

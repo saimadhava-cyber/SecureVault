@@ -1,0 +1,30 @@
+# Environment variables and secrets
+.env*
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+client/dist/
+.vite/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Private encrypted file storage
+server/vault_storage/
+
+# Uploaded files
+server/uploads/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Operating system
+.DS_Store
+Thumbs.db

@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-vault-950 text-slate-100 font-sans;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(37, 99, 235, 0.08) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(6, 182, 212, 0.08) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, rgba(16, 185, 129, 0.04) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1527;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22345e;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38bdf8;
+}
+
+/* Custom Glass & Cyber UI Classes */
+.vault-card {
+  @apply bg-vault-900/90 border border-vault-700/60 rounded-xl shadow-xl backdrop-blur-md transition-all duration-200;
+}
+
+.vault-card-hover {
+  @apply hover:border-vault-cyan/50 hover:shadow-cyan-900/20 hover:shadow-2xl transition-all duration-300;
+}
+
+.vault-input {
+  @apply w-full bg-vault-950/80 border border-vault-700 rounded-lg px-4 py-2.5 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-vault-accent focus:ring-1 focus:ring-vault-accent transition-colors;
+}
+
+.vault-btn-primary {
+  @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white font-medium text-sm shadow-lg shadow-cyan-900/25 active:scale-[0.98] transition-all disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100;
+}
+
+.vault-btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-vault-800 hover:bg-vault-700 text-slate-200 hover:text-white font-medium text-sm border border-vault-700/70 transition-all active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.vault-btn-danger {
+  @apply inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg bg-red-600/20 hover:bg-red-600/30 text-red-400 hover:text-red-300 font-medium text-sm border border-red-500/40 transition-all;
+}
